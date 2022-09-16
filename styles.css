@@ -1,0 +1,295 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------HEAD-----------*/
+header{
+    background-image:url(./maxresdefault\ \(1\).jpg);
+    background-size: cover;
+    background-position:center 
+}
+#blueback{
+    background-color: rgba(70, 101, 202, 0.534)
+}
+.navbar{
+    display: flex;      
+    padding: 10px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.navbar h2{
+    margin-right: auto;
+    margin-left: 100px;
+    font-weight: 300;
+    color: white;
+    font-size:40px;
+    cursor: pointer;
+}
+nav{
+    margin-right: 150px;
+}
+
+.navbar a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+}
+.navbar a:hover{
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.head{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.head h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+  
+}
+.head p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 30%;
+    margin: 20px;
+    color: white;
+}
+.head a{
+    color: rgb(70, 101, 202);
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 15px 30px; 
+    font-weight: 600;
+    font-size: small;
+}
+.head a:hover{
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+}
+/*----------MAIN-----------*/
+
+/*----------SECTION WELCOME-----------*/
+.welcome{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.welcome h2{
+    font-size: 22px;
+    color: rgb(70, 101, 202) ;
+}
+.welcome p{
+    padding: 20px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.808);
+}
+.welcome a{
+    text-decoration: none;
+    border: solid 2px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: rgb(70, 101, 202);
+    font-weight:500;
+    font-size: small;
+}
+.welcome a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.our{
+    display:flex;
+    text-align: center; 
+    background-color: rgb(70, 101, 202);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.our h3{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+}
+.our p{
+    width: 60%;
+    margin: auto;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.our div{
+    padding: 20px;
+
+}
+#ourobsc{
+    background-color: rgba(58, 58, 58, 0.966);
+}
+/*----------SERVICES LIST-----------*/
+.services{
+    font-family: 'Roboto', sans-serif;
+}
+.services h2{
+    font-size: 22px;
+    color: rgb(70, 101, 202) ;
+    margin-bottom: 10px;
+}
+.services p{
+    width: 55%;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(34, 33, 33, 0.527);
+    padding-bottom: 10px;
+}
+
+#list img{
+    width: 60px;
+    height: 60px;
+}
+#servs{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+#list ul{
+    width:60%;
+    display: grid;
+    margin: auto;
+    list-style: none;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+#list ul li{
+    display:flex;
+    background-color: rgba(211, 211, 211, 0.418);
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+#list ul li p{
+    color: rgb(70, 101, 202);
+    font-weight: 500;
+}
+#list ul li img{
+  display: flex;
+  justify-content: center;
+  align-self: center;    
+}
+#list ul li #imgwp{
+    width: 50px;
+    height: 50px;
+}
+/*----------EXPERIENCE DIVS-----------*/
+.experience{
+    display:flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.experience div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70, 101, 202);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.experience  img{
+    width: 60px;
+    height: 60px;
+}
+.experience strong{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    display: flex;
+    align-items: center;   
+}
+.experience strong span{
+    font-size: 22px;
+    font-weight: 400;
+}
+.experience div p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+/*----------PORTFOLIO-----------*/
+#portf{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    padding-bottom: 0px;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;  
+}
+#portf h2{
+    font-size:22px;
+    color: rgb(70, 101, 202);
+}
+#portP{
+    margin-top: 25px;
+    color: rgba(34, 33, 33, 0.527);
+}
+#portf div{
+    font-size: 12px;
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    width: 40%;
+    color: rgb(70, 101, 202);
+    font-weight: 600;
+}
+#portf div p:hover{
+    border-bottom: 1px solid blue ;
+    cursor: pointer;
+    
+}
+.portfImgs{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   width: 80%;
+   margin: auto;
+   grid-gap: 0px;
+}
+
+.portfImgs img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+footer{
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    background-color: rgb(70, 101, 202);
+}
+footer img{
+    
+}

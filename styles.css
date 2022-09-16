@@ -240,7 +240,7 @@ nav{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     padding: 20px;
     padding-bottom: 0px;
     height: 200px;
@@ -266,21 +266,27 @@ nav{
 #portf div p:hover{
     border-bottom: 1px solid blue ;
     cursor: pointer;
-    
 }
+
+
 .portfImgs{
    display: grid;
    grid-template-columns: repeat(3,1fr);
    width: 80%;
    margin: auto;
    grid-gap: 0px;
+   margin-bottom: 60px;
 }
+
+
 
 .portfImgs img{
     width: 100%;
-    object-fit: cover;
-    margin-bottom: 50px;
+    height: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
 }
+/*------------FOOTER-------------*/
 footer{
     height: 150px;
     margin: auto;
@@ -289,7 +295,29 @@ footer{
     align-items: center;
     padding-left: 200px;
     background-color: rgb(70, 101, 202);
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
-footer img{
-    
+footer h3{
+    font-weight: 500;
+    font-size: 14px;
+}
+footer div #small{
+    font-size: 10px;
+
+}
+footer #footP{
+    width: 70%;
+    font-size: 10px;
+}
+.semiCirc{
+    width: 90px;
+    height: 90px;
+    border-radius: 100% 0 0 100%;
+    object-fit: cover;
+    border: solid rgba(211, 211, 211, 0.308);
+    margin-right: 10px;
+}
+.space{
+    margin-bottom: 15px;
 }

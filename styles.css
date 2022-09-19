@@ -49,25 +49,27 @@ nav{
 .navbar a:hover{
     color: rgba(0, 0, 0, 0.596);
 }
-@media (max-width:767px){
-    #nav a{
-        display: none;
-        padding: 0;
-        align-items: center;
-           
-    }
-    #iconMenu{
-        display: flex;
-        width: 40px;
-        height: 40px;  
-        margin-right: 15px;      
-    }
-    .navbar h2{
-        font-size: 40px;
-        margin-right: auto;
-        margin-left: 15px;
-    }
-}
+        @media (max-width:767px){
+            
+            
+            #nav a{
+                display: none;
+                padding: 0;
+                align-items: center;
+                
+            }
+            #iconMenu{
+                display: flex;
+                width: 2.5rem;
+                height: 2.5rem;  
+                margin-right: 15px;      
+            }
+            .navbar h2{
+                font-size: 2.5rem;
+                margin-right: auto;
+                margin-left: 15px;
+            }
+        }
 .head{
     height: 400px;
     display: flex;
@@ -104,45 +106,32 @@ nav{
     background-color: rgba(0, 0, 0, 0.596);
     color: white;
 }
-@media (max-width:767px) {
-    .head{
-        display: flex;
-        height: 100vh;
-        align-items:center;
-        justify-content: center;
-        padding: 0;
-    }
-    .head h1{
-        font-size: 40px;
-        margin-top: 
-    }
-    .head p{
-        width: 90%;
-        margin-top: 130px;
-        margin-bottom: 10px;
-        padding-bottom: 130px;
-        font-size: 20px;
-    }
-    .head a{
-        font-size: 16px;
+        @media (max-width:767px) {
+            .head{
+                display: flex;
+                height: 100vh;
+                align-items:center;
+                justify-content: center;
+                padding: 0;
+            }
+            .head h1{
+                font-size: 2.5rem;
+            }
+            .head p{
+                width: 90%;
+                margin-top: 130px;
+                margin-bottom: 10px;
+                padding-bottom: 130px;
+                font-size: 20px;
+            }
+            .head a{
+                font-size: 16px;   
+            }
 
-        
-    }
-
-}
+        }
 /*----------MAIN-----------*/
 
-/*----------SECTION WELCOME-----------*/
-
-
-@media (max-width:1023px) { /* tablet */
-    .welcome {
-        background-color: rgb(255, 249, 202)
-    }
-}
- 
-        
-   
+/*----------SECTION WELCOME-----------*/   
 
 .welcome{
     width: 60%;
@@ -173,6 +162,27 @@ nav{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
+        @media (max-width:767px){
+            .welcome{
+            
+                width: 95%;
+                padding-top: 10px;
+            }
+            .welcome h2{
+                font-size: 2.5rem;
+                padding: 10px;
+            }
+            .welcome p{
+                padding: 10px;
+                font-size: 18px;
+                font-weight: 500;
+                padding-bottom: 40px;
+            }
+            .welcome a{
+                font-size: 20px;
+            }
+}
+/*-------------OUR SECTION---------*/
 .our{
     display:flex;
     text-align: center; 
@@ -200,6 +210,33 @@ nav{
 #ourobsc{
     background-color: rgba(58, 58, 58, 0.966);
 }
+        @media(max-width:767px){
+            .our{
+                display: flex;
+                flex-direction: column;
+                height: 1;
+                margin: auto;
+                margin-top: 20px;
+            }
+            .our div{
+                height: 300px
+            }
+            .our img{
+                width: 40px;
+                height: 40px;
+            }
+            .our h3{
+                padding-top: 15px;
+                font-size: 30px;
+                padding-bottom: 25px;
+            }
+            .our p{
+                width: 90%;
+                font-size: 16px;
+                padding: 0;
+            }
+}
+
 /*----------SERVICES LIST-----------*/
 .services{
     font-family: 'Roboto', sans-serif;
@@ -217,7 +254,9 @@ nav{
     color: rgba(34, 33, 33, 0.527);
     padding-bottom: 10px;
 }
-
+#list{
+    display: block;
+}
 #list img{
     width: 60px;
     height: 60px;
@@ -258,23 +297,41 @@ nav{
     width: 50px;
     height: 50px;
 }
-@media (max-width:767px) { /* celular */
-    .welcome {
-        background-color: rgb(255, 202, 202)
+        @media (max-width:767px) {
+            
+            #servs{
+                width:100%;
+            }
+            #servs h2{
+                font-size: 40px;
+            }
+            #servs p{
+                width: 90%;
+                padding-bottom: 0;
+            }
+            #list ul{ 
+                gap: 0;
+                height: 450px;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                margin-left: 15px;
+            }
+            #list ul li{
+                height: 160px;
+                width: 120px;
+                display: flex;
+                flex-direction: column;
+            
         }
-
-
-        #list ul{
-            width:60%;
-            display: grid;
-            margin: auto;
-            list-style: none;
-            grid-template-columns: repeat(1,1fr);
-            gap: 10px;
-            height: 200px;
-            margin-bottom: 50px;
+        #list ul li img{
+            margin-top: 20px;
+            width: 50px;
+            height: 50px;
         }
-    }  
+        #list ul li p{
+            font-size:12px;   
+        }
+    }
 /*----------EXPERIENCE DIVS-----------*/
 .experience{
     display:flex;
@@ -312,6 +369,26 @@ nav{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
+        @media (max-width:767px){
+        
+            .experience{
+                display: flex;
+                flex-direction: column;
+                height: 700px;
+            }
+            .experience div{
+                height: 500px;
+                margin: 0;
+                padding: 0;
+            }
+            .experience img{      
+                width: 50px;
+                height: 50px;
+            }
+            .experience div p{
+                font-size: 16px;
+            }
+        }
 /*----------PORTFOLIO-----------*/
 #portf{
     text-align: center;
@@ -346,31 +423,27 @@ nav{
     border-bottom: 1px solid blue ;
     cursor: pointer;
 }
-@media (max-width:767px) { /* celular */
-    #portfAS p{
-        
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width:767px) { 
+    #portf{
+        width: 100%;
+        height: 500px;
     }
+    #portf h2{
+        font-size: 30px;
+    }
+    #portf p{
+        font-size: 18px;
+    }
+    #portf #portfAS {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    #portfAS p{
+        font-size: 12px;
+    }        
 
-
-
-
-
- 
     
-
-
 }
 
 

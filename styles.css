@@ -3,6 +3,9 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+
+    
+
 }
 /*----------HEAD-----------*/
 header{
@@ -16,16 +19,11 @@ header{
 #iconMenu{
     display: none;
 }
-@media (max-width:767px){
-
-    
-}
 .navbar{
     display: flex;      
     padding: 10px;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-
 }
 .navbar h2{
     margin-right: auto;
@@ -38,7 +36,6 @@ header{
 nav{
     margin-right: 150px;
 }
-
 .navbar a{
     padding: 8px;
     text-decoration: none;
@@ -84,7 +81,6 @@ nav{
     font-size: 40px;
     color: white;
 }
-
 .head p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -400,7 +396,8 @@ nav{
     padding: 20px;
     padding-bottom: 0px;
     height: 200px;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif; 
+    
 }
 #portf h2{
     font-size:22px;
@@ -423,32 +420,33 @@ nav{
     border-bottom: 1px solid blue ;
     cursor: pointer;
 }
-@media (max-width:767px) { 
-    #portf{
-        width: 100%;
-        height: 500px;
-    }
-    #portf h2{
-        font-size: 30px;
-    }
-    #portf p{
-        font-size: 18px;
-    }
-    #portf #portfAS {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-    }
-    #portfAS p{
-        font-size: 12px;
-    }        
-
-    
-}
-
-
-
-
+        @media (max-width:767px) { 
+            #portf{
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 40px; 
+            
+        }
+        #portf h2{
+            font-size: 30px;
+        }
+        #portf p{
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        #portf #portfAS {
+            width: 95%;
+            margin: 0;
+            padding: 0;
+        }
+        #portfAS p{
+            font-size: 10px;
+            padding: 0%;
+            margin:0%;
+            display: flex;
+            justify-content: space-between;   
+        }
 .portfImgs{
    display: grid;
    grid-template-columns: repeat(3,1fr);
@@ -457,15 +455,18 @@ nav{
    grid-gap: 0px;
    margin-bottom: 60px;
 }
-
-
-
 .portfImgs img{
     width: 100%;
     height: 100%;
     object-fit: fill;
     background-repeat: no-repeat;
 }
+        @media (max-width:767px){
+            .portfImgs{
+                grid-template-columns: repeat(1,1fr);
+                width: 100%;
+                margin-bottom: 0px;
+        }
 /*------------FOOTER-------------*/
 footer{
     height: 150px;
@@ -501,3 +502,11 @@ footer #footP{
 .space{
     margin-bottom: 15px;
 }
+@media(max-width:767px){
+    footer{
+        padding-left: 20%;
+        padding-top: 0;
+       
+    }
+}
+

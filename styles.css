@@ -3,11 +3,13 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 
     
 
 }
 /*----------HEAD-----------*/
+
 header{
     background-image:url(./maxresdefault\ \(1\).jpg);
     background-size: cover;
@@ -46,85 +48,45 @@ nav{
 .navbar a:hover{
     color: rgba(0, 0, 0, 0.596);
 }
-        @media (max-width:767px){
-            
-            
-            #nav a{
-                display: none;
-                padding: 0;
-                align-items: center;
-                
-            }
-            #iconMenu{
-                display: flex;
-                width: 2.5rem;
-                height: 2.5rem;  
-                margin-right: 15px;      
-            }
-            .navbar h2{
-                font-size: 2.5rem;
-                margin-right: auto;
-                margin-left: 15px;
-            }
-        }
+.naV{
+    display: none;
+}   
 .head{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
 }
 .head h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 40px;
+color: white;
 }
 .head p{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    width: 30%;
-    margin: 20px;
-    color: white;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+width: 30%;
+margin: 20px;
+color: white;
 }
 .head a{
-    color: rgb(70, 101, 202);
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    padding: 15px 30px; 
-    font-weight: 600;
-    font-size: small;
+color: rgb(70, 101, 202);
+font-family: 'Roboto', sans-serif;
+background-color: white;
+text-decoration: none;
+border-radius: 40px;
+padding: 15px 30px; 
+font-weight: 600;
+font-size: small;
 }
 .head a:hover{
-    background-color: rgba(0, 0, 0, 0.596);
-    color: white;
+background-color: rgba(0, 0, 0, 0.596);
+color: white;
 }
-        @media (max-width:767px) {
-            .head{
-                display: flex;
-                height: 100vh;
-                align-items:center;
-                justify-content: center;
-                padding: 0;
-            }
-            .head h1{
-                font-size: 2.5rem;
-            }
-            .head p{
-                width: 90%;
-                margin-top: 130px;
-                margin-bottom: 10px;
-                padding-bottom: 130px;
-                font-size: 20px;
-            }
-            .head a{
-                font-size: 16px;   
-            }
-
-        }
+    
 /*----------MAIN-----------*/
 
 /*----------SECTION WELCOME-----------*/   
@@ -158,26 +120,8 @@ nav{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
-        @media (max-width:767px){
-            .welcome{
-            
-                width: 95%;
-                padding-top: 10px;
-            }
-            .welcome h2{
-                font-size: 2.5rem;
-                padding: 10px;
-            }
-            .welcome p{
-                padding: 10px;
-                font-size: 18px;
-                font-weight: 500;
-                padding-bottom: 40px;
-            }
-            .welcome a{
-                font-size: 20px;
-            }
-}
+        
+
 /*-------------OUR SECTION---------*/
 .our{
     display:flex;
@@ -206,32 +150,8 @@ nav{
 #ourobsc{
     background-color: rgba(58, 58, 58, 0.966);
 }
-        @media(max-width:767px){
-            .our{
-                display: flex;
-                flex-direction: column;
-                height: 1;
-                margin: auto;
-                margin-top: 20px;
-            }
-            .our div{
-                height: 300px
-            }
-            .our img{
-                width: 40px;
-                height: 40px;
-            }
-            .our h3{
-                padding-top: 15px;
-                font-size: 30px;
-                padding-bottom: 25px;
-            }
-            .our p{
-                width: 90%;
-                font-size: 16px;
-                padding: 0;
-            }
-}
+        
+
 
 /*----------SERVICES LIST-----------*/
 .services{
@@ -293,41 +213,6 @@ nav{
     width: 50px;
     height: 50px;
 }
-        @media (max-width:767px) {
-            
-            #servs{
-                width:100%;
-            }
-            #servs h2{
-                font-size: 40px;
-            }
-            #servs p{
-                width: 90%;
-                padding-bottom: 0;
-            }
-            #list ul{ 
-                gap: 0;
-                height: 450px;
-                display: grid;
-                grid-template-columns: repeat(3,1fr);
-                margin-left: 15px;
-            }
-            #list ul li{
-                height: 160px;
-                width: 120px;
-                display: flex;
-                flex-direction: column;
-            
-        }
-        #list ul li img{
-            margin-top: 20px;
-            width: 50px;
-            height: 50px;
-        }
-        #list ul li p{
-            font-size:12px;   
-        }
-    }
 /*----------EXPERIENCE DIVS-----------*/
 .experience{
     display:flex;
@@ -364,27 +249,7 @@ nav{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-}
-        @media (max-width:767px){
-        
-            .experience{
-                display: flex;
-                flex-direction: column;
-                height: 700px;
-            }
-            .experience div{
-                height: 500px;
-                margin: 0;
-                padding: 0;
-            }
-            .experience img{      
-                width: 50px;
-                height: 50px;
-            }
-            .experience div p{
-                font-size: 16px;
-            }
-        }
+}    
 /*----------PORTFOLIO-----------*/
 #portf{
     text-align: center;
@@ -420,33 +285,8 @@ nav{
     border-bottom: 1px solid blue ;
     cursor: pointer;
 }
-        @media (max-width:767px) { 
-            #portf{
-            width: 100%;
-            justify-content: center;
-            margin-top: 10px;
-            margin-bottom: 40px; 
-            
-        }
-        #portf h2{
-            font-size: 30px;
-        }
-        #portf p{
-            font-size: 18px;
-            padding-bottom: 20px;
-        }
-        #portf #portfAS {
-            width: 95%;
-            margin: 0;
-            padding: 0;
-        }
-        #portfAS p{
-            font-size: 10px;
-            padding: 0%;
-            margin:0%;
-            display: flex;
-            justify-content: space-between;   
-        }
+       
+        
 .portfImgs{
    display: grid;
    grid-template-columns: repeat(3,1fr);
@@ -461,13 +301,9 @@ nav{
     object-fit: fill;
     background-repeat: no-repeat;
 }
-        @media (max-width:767px){
-            .portfImgs{
-                grid-template-columns: repeat(1,1fr);
-                width: 100%;
-                margin-bottom: 0px;
-        }
+       
 /*------------FOOTER-------------*/
+
 footer{
     height: 150px;
     margin: auto;
@@ -501,12 +337,219 @@ footer #footP{
 }
 .space{
     margin-bottom: 15px;
-}
-@media(max-width:767px){
-    footer{
+} 
+        @media (max-width:767px){
+        .welcome{
+        width: 95%;
+        padding-top: 10px;
+        }
+        .welcome h2{
+        font-size: 2.5rem;
+        padding: 10px;
+        }
+        .welcome p{
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 40px;
+        }
+        .welcome a{
+        font-size: 20px;
+        } 
+        #nav a{
+        display: none;
+        padding: 0;
+        align-items: center;
+        }
+        .navbar h2{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 2.5rem;
+        margin-right: auto;
+        margin-left: 15px;
+        }
+        .naV{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .bar-btn{
+        font-size: 25px;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer; 
+        }
+        .nav-menu{
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        left: 0px;
+        right: 0px;
+        background-image:url(maxresdefault.jpg);
+        background-repeat: no-repeat;
+        background-position: center;   
+        text-align: center;
+        transition: all .5s;
+        }
+        .nav-menu li{
+        display: none;
+        line-height: 30px;
+        margin: 50px 0; 
+        transition:  all .5s;
+        }
+        .nav-menu li a{
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        }
+        .nav-menu li a.active, .nav-menu li a:hover{
+        color: red;
+        transition: .3s;
+        }
+        #check{
+        display: none;
+        }
+        #check:checked ~ .nav-menu{
+        height: 100vh;
+
+        } 
+        #check:checked ~ .nav-menu li{
+        display: block;
+        }
+
+        #portf{
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 60px; 
+
+        }
+        #portf h2{
+        font-size: 30px;
+        margin-top: 20px;
+        }
+        #portf p{
+        font-size: 18px;
+        padding-bottom: 20px;
+        }
+        #portf #portfAS {
+
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        }
+        #portfAS p{
+        font-size: 10px;
+        padding: 0%;
+        margin:0%;
+        display: flex;
+        justify-content: space-between;   
+        }
+        .portfImgs{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin-bottom: 0px;
+        }
+        footer{
         padding-left: 20%;
         padding-top: 0;
-       
-    }
-}
 
+        }
+        .experience{
+            display: flex;
+            flex-direction: column;
+            height: 700px;
+        }
+        .experience div{
+            height: 500px;
+            margin: 0;
+            padding: 0;
+        }
+        .experience img{      
+            width: 50px;
+            height: 50px;
+        }
+        .experience div p{
+            font-size: 16px;
+        }
+        .our{
+            display: flex;
+            flex-direction: column;
+            height: 1;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .our div{
+            height: 300px
+        }
+        .our img{
+            width: 40px;
+            height: 40px;
+        }
+        .our h3{
+            padding-top: 15px;
+            font-size: 30px;
+            padding-bottom: 25px;
+        }
+        .our p{
+            width: 90%;
+            font-size: 16px;
+            padding: 0;
+        }
+
+        .head{
+            display: flex;
+            height: 100vh;
+            align-items:center;
+            justify-content: center;
+            padding: 0;
+        }
+        .head h1{
+            font-size: 2.5rem;
+        }
+        .head p{
+            width: 90%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 90px;
+            font-size: 20px;
+            padding-top: 80px;
+        }
+        .head a{
+            font-size: 16px;   
+        }
+        #servs{
+            width:100%;
+        }
+        #servs h2{
+            font-size: 40px;
+        }
+        #servs p{
+            width: 90%;
+            padding-bottom: 0;
+        }
+        #list ul{ 
+            gap: 0;
+            height: 450px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 15px;
+        }
+        #list ul li{
+            height: 160px;
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+        }
+            #list ul li img{
+            margin-top: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        #list ul li p{
+            font-size:12px;   
+        }
+        }
